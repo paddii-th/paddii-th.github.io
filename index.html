@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paddii · Bite-sized Thai Rice Crackers</title>
+<meta name="description" content="Paddii bite-sized Thai rice crackers from the Rossukon family. Crispy, no mess, lightly sweet. Classic Caramel and Roasted Almonds.">
+<meta property="og:title" content="Paddii · Bite-sized Thai rice crackers">
+<meta property="og:description" content="Crispy, no-mess Thai rice crackers · Caramel 49 ฿ · Roasted Almonds 59 ฿">
+<meta property="og:image" content="images/packs.webp">
+<link rel="icon" href="images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mitr:wght@400;500;600&family=Anuphan:wght@400..700&display=swap">
+<style>
+:root{--blue:#0051B6;--navy:#0A2C66;--cream:#FDF8EC;--yellow:#F7C900;--caramel:#D9822B;--brown:#7A3B1E;--ink:#3A4A66;--mist:#DCE8FA}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Anuphan',Tahoma,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;font-size:18px}
+h1,h2,h3{font-family:'Mitr',Tahoma,sans-serif;color:var(--navy);margin:0;line-height:1.2}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+.eyebrow{font-family:'Mitr',Tahoma,sans-serif;font-weight:500;color:var(--caramel);letter-spacing:1px;text-transform:uppercase;font-size:15px;margin:0 0 10px}
+.th{color:var(--blue);font-weight:500;margin:6px 0 0}
+.th-s{font-size:15px;opacity:.85}
+.btn{display:inline-block;font-family:'Mitr',Tahoma,sans-serif;font-weight:500;text-decoration:none;border-radius:999px;padding:14px 28px;font-size:18px}
+.btn-yellow{background:var(--yellow);color:var(--navy)}
+.btn-line{background:#06C755;color:#fff}
+.btn-ghost{border:2px solid var(--cream);color:var(--cream)}
+section{padding:88px 0}
+/* nav */
+header{position:sticky;top:0;z-index:10;background:var(--blue)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 24px;max-width:1160px;margin:0 auto}
+.nav img{height:44px;width:auto}
+.nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+.nav ul a{color:var(--cream);text-decoration:none;font-family:'Mitr',Tahoma,sans-serif;font-size:16px}
+.nav ul a:hover{color:var(--yellow)}
+/* hero */
+.hero{background:var(--blue);color:var(--mist);padding:56px 0 80px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:40px;align-items:center}
+.hero h1{color:var(--yellow);font-size:clamp(38px,6vw,68px)}
+.hero .sub{font-family:'Mitr',Tahoma,sans-serif;color:var(--cream);font-size:22px;margin:14px 0 0}
+.hero p{font-size:19px}
+.hero .ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+.hero-img{position:relative}
+.hero-img::before{content:"";position:absolute;inset:6% 8%;background:#1F67C4;border-radius:50%}
+.hero-img img{position:relative;filter:drop-shadow(0 24px 30px rgba(10,44,102,.4))}
+.pill{display:inline-block;background:rgba(253,248,236,.12);border:1px solid rgba(253,248,236,.3);color:var(--cream);border-radius:999px;padding:6px 16px;font-size:15px;margin-top:20px}
+/* products */
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;margin-top:40px}
+.prod{border-radius:32px;padding:36px;display:flex;flex-direction:column;gap:10px}
+.prod.car{background:var(--blue);color:var(--mist)}
+.prod.car h3{color:var(--cream)}
+.prod.alm{background:var(--yellow);color:var(--navy)}
+.prod img{height:260px;object-fit:contain;margin:0 auto}
+.prod h3{font-size:28px}
+.price{font-family:'Mitr',Tahoma,sans-serif;font-weight:600;font-size:40px}
+.prod.car .price{color:var(--yellow)}
+.prod.alm .price{color:var(--blue)}
+.tag{font-weight:600;font-size:16px}
+/* why */
+.why{background:var(--navy);color:var(--mist)}
+.why h2{color:var(--cream)}
+.why .en{color:var(--yellow)}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:36px}
+.card{background:rgba(253,248,236,.07);border:1px solid rgba(253,248,236,.22);border-radius:24px;padding:28px}
+.card h3{color:var(--yellow);font-size:22px}
+.card .en-s{color:var(--cream);font-size:15px;margin:4px 0 8px}
+.card p{margin:0}
+/* story */
+.story .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.photos{display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:240px;gap:14px}
+.photos img{border-radius:20px;width:100%;height:100%;object-fit:cover}
+.photos .tall{object-position:60% 30%}
+.photos .tall{grid-row:span 2}
+.badges{display:flex;flex-direction:column;gap:12px;margin-top:24px}
+.badge{display:flex;gap:16px;align-items:center;background:#fff;border-radius:18px;padding:14px 20px}
+.badge b{font-family:'Mitr',Tahoma,sans-serif;color:var(--caramel);font-size:24px;min-width:80px}
+.badge span{font-size:16px}
+/* order */
+.order{background:var(--yellow);color:var(--navy)}
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:32px}
+.step{background:var(--cream);border-radius:24px;padding:24px}
+.num{width:48px;height:48px;border-radius:50%;background:var(--blue);color:var(--yellow);font-family:'Mitr',Tahoma,sans-serif;font-weight:600;font-size:24px;display:flex;align-items:center;justify-content:center;margin-bottom:10px}
+.prices{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:24px;background:var(--navy);color:var(--cream);border-radius:24px;padding:22px;text-align:center}
+.prices b{display:block;font-family:'Mitr',Tahoma,sans-serif;color:var(--yellow);font-size:28px}
+.ship{text-align:center;font-family:'Mitr',Tahoma,sans-serif;margin:14px 0 0}
+/* trade */
+.trade .box{background:var(--blue);color:var(--mist);border-radius:32px;padding:44px;display:grid;grid-template-columns:1.2fr 1fr;gap:32px;align-items:center}
+.trade h2{color:var(--cream)}
+.trade ul{margin:16px 0 0;padding-left:22px}
+table{width:100%;border-collapse:collapse;background:var(--cream);color:var(--navy);border-radius:18px;overflow:hidden}
+th,td{padding:12px 16px;text-align:left}
+th{background:var(--navy);color:var(--cream);font-family:'Mitr',Tahoma,sans-serif;font-weight:500}
+td{border-top:1px solid #E8DFC8}
+/* footer */
+footer{background:var(--navy);color:var(--mist);padding:56px 0 36px}
+footer .wrap{display:grid;grid-template-columns:1fr 1fr 1fr;gap:32px}
+footer h3{color:var(--yellow);font-size:20px;margin-bottom:10px}
+footer p{margin:4px 0;font-size:16px}
+footer img{height:64px;width:auto}
+.copy{text-align:center;font-size:14px;margin-top:36px;opacity:.7}
+@media (max-width:860px){
+  .hero .wrap,.story .wrap,.trade .box,footer .wrap{grid-template-columns:1fr}
+  .grid2,.grid3,.steps{grid-template-columns:1fr}
+  .prices{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .nav ul{display:none}
+  section{padding:64px 0}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav" aria-label="Main">
+    <a href="#top"><img src="images/logo-white.webp" alt="Paddii"></a>
+    <ul>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#why">Why Paddii</a></li>
+      <li><a href="#story">Our Story</a></li>
+      <li><a href="#order">How to Order</a></li>
+      <li><a href="#trade">Wholesale</a></li>
+    </ul>
+    <a class="btn btn-line" href="[LINE-LINK]">Order on LINE</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Bite-sized crunch,<br>made from Thai rice</h1>
+      <p class="sub">ไรซ์แครกเกอร์พอดีคำ จากข้าวไทย</p>
+      <p>Open one bag and you can’t stop. Small enough to pop in your mouth, no crumbs on your hands, sealed with nitrogen to stay crispy, and lightly sweet, never greasy.</p>
+      <div class="ctas">
+        <a class="btn btn-yellow" href="#order">How to order</a>
+        <a class="btn btn-ghost" href="#products">See the flavors</a>
+      </div>
+      <span class="pill">by Rossukon Fermented Rice · a Thai rice family for 40+ years</span>
+    </div>
+    <div class="hero-img"><img src="images/packs.webp" alt="Paddii Rice Cracker packs: Classic Caramel and Roasted Almonds, 30 g" width="1200" height="650"></div>
+  </div>
+</section>
+
+<section id="products">
+  <div class="wrap">
+    <p class="eyebrow">Our flavors</p>
+    <h2>Two flavors to start</h2>
+    <p class="th">สองรสแรกจากแพดดี้ · more coming soon</p>
+    <div class="grid2">
+      <article class="prod car">
+        <img src="images/caramel.webp" alt="Caramel rice cracker with caramel drizzle" width="700" height="552" loading="lazy">
+        <h3>Classic Caramel</h3>
+        <span class="tag" style="color:var(--yellow)">Sweet &amp; crunchy · คาราเมล</span>
+        <p>Thai sticky rice coated in a coconut-sugar and coconut-milk caramel. Sweet, but never too much. Loved by kids and grown-ups alike.</p>
+        <span class="price">49 ฿ <small style="font-size:16px;font-weight:400">/ 30 g bag</small></span>
+      </article>
+      <article class="prod alm">
+        <img src="images/almond.webp" alt="Stack of almond rice crackers with whole almonds" width="900" height="630" loading="lazy">
+        <h3>Roasted Almonds</h3>
+        <span class="tag" style="color:var(--brown)">With 34.78% real almonds · อัลมอนด์อบ</span>
+        <p>Packed with real roasted almonds for a nuttier, more filling bite. A favorite with health-minded snackers.</p>
+        <span class="price">59 ฿ <small style="font-size:16px;font-weight:400">/ 30 g bag</small></span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="why" class="why">
+  <div class="wrap">
+    <p class="eyebrow" style="color:var(--yellow)">Why Paddii</p>
+    <h2>A little more per bag, a lot more in every bite</h2>
+    <p class="th" style="color:var(--yellow)">แพงกว่านิด แต่คุ้มกว่าเยอะ</p>
+    <div class="grid3">
+      <div class="card"><h3>Bite-sized, no mess</h3><p class="en-s">พอดีคำ ไม่เลอะมือ</p><p>Small rounds you can pop straight in. No breaking, no crumbs in the car or on your keyboard.</p></div>
+      <div class="card"><h3>Crisp in every bag</h3><p class="en-s">กรอบนานทุกซอง</p><p>Nitrogen-flushed foil bags keep out light, air and moisture, so it never tastes stale.</p></div>
+      <div class="card"><h3>Lightly sweet, not greasy</h3><p class="en-s">หวานละมุน ไม่มันเยิ้ม</p><p>Fried, then oven-drained of excess oil. Sweetened with coconut sugar. 100% vegan.</p></div>
+      <div class="card"><h3>Certified factory</h3><p class="en-s">โรงงานมาตรฐานสากล</p><p>Made in a factory certified to FSSC 22000 v6 and GHP/HACCP by Intertek.</p></div>
+      <div class="card"><h3>Less than a cup of coffee</h3><p class="en-s">ถูกกว่ากาแฟหนึ่งแก้ว</p><p>From 49 ฿ a bag: the perfect partner for your coffee, and it lasts longer.</p></div>
+      <div class="card"><h3>From a 40-year rice family</h3><p class="en-s">จากครอบครัวคนทำข้าว</p><p>Made by the third generation of Rossukon, on 7-Eleven shelves across Thailand for over 40 years.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="story" class="story">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Our story</p>
+      <h2>Three generations of Thai rice makers</h2>
+      <p class="th">สามรุ่นของคนทำข้าวไทย</p>
+      <p>Pat, the third generation of Rossukon Fermented Rice, grew up eating khao taen, the traditional Thai rice cracker. She loved the taste but not the big, messy sheets that went stale so quickly.</p>
+      <p>So she created Paddii: a bite-sized Thai rice snack that stays crispy, keeps your hands clean, and is made for everyone, every day.</p>
+      <div class="badges">
+        <div class="badge"><b>40+</b><span>Years supplying 7-Eleven Thailand</span></div>
+        <div class="badge"><b>2026</b><span>Taste Innovation Award, THAIFEX (for our Rossukon fermented rice vinegar)</span></div>
+        <div class="badge"><b>2025</b><span>Thai Rice Innovation Awards (for our Rossukon fermented rice vinegar)</span></div>
+      </div>
+    </div>
+    <div class="photos">
+      <img class="tall" src="images/award-rice.webp" alt="Pat with the Thai Rice Innovation Awards 2025 trophy" loading="lazy">
+      <img src="images/award-thaifex.webp" alt="Pat receiving the Taste Innovation Award at THAIFEX" loading="lazy">
+      <img src="images/khaomak.webp" alt="Rossukon fermented rice (khao mak) packs" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section id="order" class="order">
+  <div class="wrap">
+    <p class="eyebrow" style="color:var(--brown)">How to order</p>
+    <h2>Order in 3 easy steps</h2>
+    <p class="th">สั่งง่ายใน 3 ขั้นตอน</p>
+    <div class="steps">
+      <div class="step"><div class="num">1</div><h3>Pick your flavors</h3><p>Choose Caramel, Almonds or a mix, and how many bags.</p></div>
+      <div class="step"><div class="num">2</div><h3>Message us on LINE</h3><p>Send your name, address and phone number.</p></div>
+      <div class="step"><div class="num">3</div><h3>Pay and enjoy</h3><p>Pay by bank transfer. Your snacks arrive in [1–3] days.</p></div>
+    </div>
+    <div class="prices">
+      <div>1 bag<b>49/59 ฿</b></div>
+      <div>3 bags<b>139 ฿</b></div>
+      <div>6 bags<b>269 ฿</b></div>
+      <div>12 bags · free shipping<b>499 ฿</b></div>
+    </div>
+    <p class="ship">Shipping 50 ฿ per order · Free shipping on 12 bags</p>
+    <p style="text-align:center;margin-top:24px"><a class="btn btn-line" href="[LINE-LINK]">Order on LINE</a></p>
+  </div>
+</section>
+
+<section id="trade" class="trade">
+  <div class="wrap">
+    <div class="box">
+      <div>
+        <p class="eyebrow" style="color:var(--yellow)">For shops &amp; cafés</p>
+        <h2>Stock Paddii at your café or shop</h2>
+        <p class="th" style="color:var(--yellow)">สนใจนำแพดดี้ไปขายที่ร้าน</p>
+        <ul>
+          <li>About 30% profit for you at our suggested retail price</li>
+          <li>Minimum order 20 bags, flavors can be mixed · consignment available</li>
+          <li>Free counter display box and tasting kit</li>
+        </ul>
+      </div>
+      <table>
+        <tr><th></th><th>Caramel</th><th>Almonds</th></tr>
+        <tr><td>Trade price (incl. VAT)</td><td>34 ฿</td><td>42 ฿</td></tr>
+        <tr><td>Suggested retail price</td><td>49 ฿</td><td>59 ฿</td></tr>
+        <tr><td>Your profit per bag</td><td>15 ฿</td><td>17 ฿</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <img src="images/logo-white.webp" alt="Paddii">
+      <p style="margin-top:12px">Bite-sized Thai rice crackers<br>by Rossukon Fermented Rice</p>
+    </div>
+    <div>
+      <h3>Contact us</h3>
+      <p>Tel. 087-002-7117</p>
+      <p><a href="mailto:rossukon.fmr@gmail.com">rossukon.fmr@gmail.com</a></p>
+      <p>LINE: [@paddii]</p>
+      <p>Facebook: [Paddii]</p>
+    </div>
+    <div>
+      <h3>Distributed by</h3>
+      <p>K.P. Kranpetch Limited Partnership (หจก. เค. พี. กรัณย์เพชร)</p>
+      <p>22/68 Moo 8, Bang Sao Thong, Samut Prakan 10570, Thailand</p>
+    </div>
+  </div>
+  <p class="copy">© 2026 Paddii · Rossukon Fermented Rice · Product of Thailand</p>
+</footer>
+
+</body>
+</html>
