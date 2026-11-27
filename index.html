@@ -86,6 +86,18 @@ header{position:sticky;top:0;z-index:10;background:var(--blue)}
 .prices{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:24px;background:var(--navy);color:var(--cream);border-radius:24px;padding:22px;text-align:center}
 .prices b{display:block;font-family:'Mitr',Tahoma,sans-serif;color:var(--yellow);font-size:28px}
 .ship{text-align:center;font-family:'Mitr',Tahoma,sans-serif;margin:14px 0 0}
+.th-small{font-size:14px;opacity:.8;margin:2px 0 6px}
+.step h3{margin-top:4px}
+.step-bags{display:flex;gap:6px;margin:4px 0 8px}
+.step-bags img{width:56px;height:auto}
+.prices>div{display:flex;flex-direction:column;align-items:center;gap:2px}
+.prices .th-small{display:inline;margin:0;color:var(--mist)}
+.bags{display:flex;justify-content:center;align-items:flex-end;height:104px;margin-bottom:8px;width:100%}
+.bags img{flex:none;width:48px;height:55px;max-width:none;object-fit:contain;margin:0 -8px;filter:drop-shadow(0 4px 6px rgba(0,0,0,.35))}
+.bags.b12{display:grid;grid-template-columns:repeat(6,26px);grid-auto-rows:46px;justify-content:center;align-content:end;padding-right:20px}
+.bags.b12 img{width:44px;height:50px;margin:0}
+.free{background:var(--yellow);color:var(--navy);font-family:'Mitr',Tahoma,sans-serif;font-size:13px;border-radius:999px;padding:2px 10px;margin-top:4px}
+@media (max-width:860px){.bags{height:84px}.bags img{width:34px;height:39px;margin:0 -6px}.bags.b12{grid-template-columns:repeat(6,19px);grid-auto-rows:36px;padding-right:14px}.bags.b12 img{width:32px;height:37px}}
 /* trade */
 .trade .box{background:var(--blue);color:var(--mist);border-radius:32px;padding:44px;display:grid;grid-template-columns:1.2fr 1fr;gap:32px;align-items:center}
 .trade h2{color:var(--cream)}
@@ -206,18 +218,23 @@ footer img{height:64px;width:auto}
     <h2>Order in 3 easy steps</h2>
     <p class="th">สั่งง่ายใน 3 ขั้นตอน</p>
     <div class="steps">
-      <div class="step"><div class="num">1</div><h3>Pick your flavors</h3><p>Choose Caramel, Almonds or a mix, and how many bags.</p></div>
-      <div class="step"><div class="num">2</div><h3>Message us on LINE</h3><p>Send your name, address and phone number.</p></div>
-      <div class="step"><div class="num">3</div><h3>Pay and enjoy</h3><p>Pay by bank transfer. Your snacks arrive in [1–3] days.</p></div>
+      <div class="step"><div class="num">1</div>
+        <div class="step-bags"><img src="images/pack-caramel.webp" alt="Caramel bag" width="70" height="80"><img src="images/pack-almond.webp" alt="Roasted Almonds bag" width="70" height="80"></div>
+        <h3>Pick your flavors</h3><p class="th-small">เลือกรสและจำนวนซอง</p><p>Choose Caramel, Almonds or a mix, and how many bags.</p><p class="th-small">เลือกคาราเมล อัลมอนด์อบ หรือคละรสก็ได้</p></div>
+      <div class="step"><div class="num">2</div>
+        <h3>Message us on LINE</h3><p class="th-small">ทักแชท LINE</p><p>Send your name, address and phone number.</p><p class="th-small">ส่งชื่อ ที่อยู่ และเบอร์โทรศัพท์</p></div>
+      <div class="step"><div class="num">3</div>
+        <h3>Pay and enjoy</h3><p class="th-small">โอนเงิน แล้วรอรับขนม</p><p>Pay by bank transfer. Your snacks arrive in [1–3] days.</p><p class="th-small">ชำระผ่านการโอนเงิน ได้รับสินค้าภายใน [1–3] วัน</p></div>
     </div>
     <div class="prices">
-      <div>1 bag<b>49/59 ฿</b></div>
-      <div>3 bags<b>139 ฿</b></div>
-      <div>6 bags<b>269 ฿</b></div>
-      <div>12 bags · free shipping<b>499 ฿</b></div>
+      <div><div class="bags"><img src="images/pack-caramel.webp" alt="" width="40" height="46"></div><span>1 bag <span class="th-small">· 1 ซอง</span></span><b>49/59 ฿</b></div>
+      <div><div class="bags"><img src="images/pack-caramel.webp" alt="" width="40" height="46"><img src="images/pack-almond.webp" alt="" width="40" height="46"><img src="images/pack-caramel.webp" alt="" width="40" height="46"></div><span>3 bags <span class="th-small">· 3 ซอง</span></span><b>139 ฿</b></div>
+      <div><div class="bags"><img src="images/pack-caramel.webp" alt="" width="40" height="46"><img src="images/pack-almond.webp" alt="" width="40" height="46"><img src="images/pack-caramel.webp" alt="" width="40" height="46"><img src="images/pack-almond.webp" alt="" width="40" height="46"><img src="images/pack-caramel.webp" alt="" width="40" height="46"><img src="images/pack-almond.webp" alt="" width="40" height="46"></div><span>6 bags <span class="th-small">· 6 ซอง</span></span><b>269 ฿</b></div>
+      <div><div class="bags b12"><img src="images/pack-caramel.webp" alt="" width="40" height="46"><img src="images/pack-almond.webp" alt="" width="40" height="46"><img src="images/pack-caramel.webp" alt="" width="40" height="46"><img src="images/pack-almond.webp" alt="" width="40" height="46"><img src="images/pack-caramel.webp" alt="" width="40" height="46"><img src="images/pack-almond.webp" alt="" width="40" height="46"><img src="images/pack-caramel.webp" alt="" width="40" height="46"><img src="images/pack-almond.webp" alt="" width="40" height="46"><img src="images/pack-caramel.webp" alt="" width="40" height="46"><img src="images/pack-almond.webp" alt="" width="40" height="46"><img src="images/pack-caramel.webp" alt="" width="40" height="46"><img src="images/pack-almond.webp" alt="" width="40" height="46"></div><span>12 bags <span class="th-small">· 12 ซอง</span></span><b>499 ฿</b><span class="free">Free shipping · ส่งฟรี</span></div>
     </div>
     <p class="ship">Shipping 50 ฿ per order · Free shipping on 12 bags</p>
-    <p style="text-align:center;margin-top:24px"><a class="btn btn-line" href="https://lin.ee/7nR1ssz">Order on LINE</a></p>
+    <p class="ship th-small" style="margin-top:2px">ค่าส่ง 50 บาท ต่อออเดอร์ · ซื้อ 12 ซอง ส่งฟรี</p>
+    <p style="text-align:center;margin-top:24px"><a class="btn btn-line" href="https://lin.ee/7nR1ssz">Order on LINE · สั่งทาง LINE</a></p>
   </div>
 </section>
 
