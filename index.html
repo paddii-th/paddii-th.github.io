@@ -68,13 +68,14 @@ header{position:sticky;top:0;z-index:10;background:var(--blue)}
 .card .en-s{color:var(--cream);font-size:15px;margin:4px 0 8px}
 .card p{margin:0}
 /* story */
-.story .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.story .wrap{max-width:860px}
 .photos{display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:240px;gap:14px}
 .photos img{border-radius:20px;width:100%;height:100%;object-fit:cover}
 .photos .tall{object-position:60% 30%}
 .photos .tall{grid-row:span 2}
-.badges{display:flex;flex-direction:column;gap:12px;margin-top:24px}
-.badge{display:flex;gap:16px;align-items:center;background:#fff;border-radius:18px;padding:14px 20px}
+.badges{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:24px}
+@media (max-width:860px){.badges{grid-template-columns:1fr}}
+.badge{display:flex;flex-direction:column;gap:4px;background:#fff;border-radius:18px;padding:18px 20px}
 .badge b{font-family:'Mitr',Tahoma,sans-serif;color:var(--caramel);font-size:24px;min-width:80px}
 .badge span{font-size:16px}
 /* order */
@@ -169,14 +170,14 @@ footer img{height:64px;width:auto}
 <section id="why" class="why">
   <div class="wrap">
     <p class="eyebrow" style="color:var(--yellow)">Why Paddii</p>
-    <h2>A little more per bag, a lot more in every bite</h2>
-    <p class="th" style="color:var(--yellow)">แพงกว่านิด แต่คุ้มกว่าเยอะ</p>
+    <h2>Small bites, big reasons to love</h2>
+    <p class="th" style="color:var(--yellow)">เหตุผลที่ทุกคนหลงรักแพดดี้</p>
     <div class="grid3">
       <div class="card"><h3>Bite-sized, no mess</h3><p class="en-s">พอดีคำ ไม่เลอะมือ</p><p>Small rounds you can pop straight in. No breaking, no crumbs in the car or on your keyboard.</p></div>
       <div class="card"><h3>Crisp in every bag</h3><p class="en-s">กรอบนานทุกซอง</p><p>Nitrogen-flushed foil bags keep out light, air and moisture, so it never tastes stale.</p></div>
       <div class="card"><h3>Lightly sweet, not greasy</h3><p class="en-s">หวานละมุน ไม่มันเยิ้ม</p><p>Fried, then oven-drained of excess oil. Sweetened with coconut sugar. 100% vegan.</p></div>
       <div class="card"><h3>Certified factory</h3><p class="en-s">โรงงานมาตรฐานสากล</p><p>Made in a factory certified to FSSC 22000 v6 and GHP/HACCP by Intertek.</p></div>
-      <div class="card"><h3>Less than a cup of coffee</h3><p class="en-s">ถูกกว่ากาแฟหนึ่งแก้ว</p><p>From 49 ฿ a bag: the perfect partner for your coffee, and it lasts longer.</p></div>
+      <div class="card"><h3>Perfect with coffee</h3><p class="en-s">ขนมคู่กาแฟ</p><p>The ideal sweet bite next to your coffee, tea or cocoa, at home, at work or on the go.</p></div>
       <div class="card"><h3>From a 40-year rice family</h3><p class="en-s">จากครอบครัวคนทำข้าว</p><p>Made by the third generation of Rossukon, on 7-Eleven shelves across Thailand for over 40 years.</p></div>
     </div>
   </div>
@@ -195,11 +196,6 @@ footer img{height:64px;width:auto}
         <div class="badge"><b>2026</b><span>Taste Innovation Award, THAIFEX (for our Rossukon fermented rice vinegar)</span></div>
         <div class="badge"><b>2025</b><span>Thai Rice Innovation Awards (for our Rossukon fermented rice vinegar)</span></div>
       </div>
-    </div>
-    <div class="photos">
-      <img class="tall" src="images/award-rice.webp" alt="Pat with the Thai Rice Innovation Awards 2025 trophy" loading="lazy">
-      <img src="images/award-thaifex.webp" alt="Pat receiving the Taste Innovation Award at THAIFEX" loading="lazy">
-      <img src="images/khaomak.webp" alt="Rossukon fermented rice (khao mak) packs" loading="lazy">
     </div>
   </div>
 </section>
@@ -227,23 +223,12 @@ footer img{height:64px;width:auto}
 
 <section id="trade" class="trade">
   <div class="wrap">
-    <div class="box">
-      <div>
-        <p class="eyebrow" style="color:var(--yellow)">For shops &amp; cafés</p>
-        <h2>Stock Paddii at your café or shop</h2>
-        <p class="th" style="color:var(--yellow)">สนใจนำแพดดี้ไปขายที่ร้าน</p>
-        <ul>
-          <li>About 30% profit for you at our suggested retail price</li>
-          <li>Minimum order 20 bags, flavors can be mixed · consignment available</li>
-          <li>Free counter display box and tasting kit</li>
-        </ul>
-      </div>
-      <table>
-        <tr><th></th><th>Caramel</th><th>Almonds</th></tr>
-        <tr><td>Trade price (incl. VAT)</td><td>34 ฿</td><td>42 ฿</td></tr>
-        <tr><td>Suggested retail price</td><td>49 ฿</td><td>59 ฿</td></tr>
-        <tr><td>Your profit per bag</td><td>15 ฿</td><td>17 ฿</td></tr>
-      </table>
+    <div class="box" style="grid-template-columns:1fr;gap:0;text-align:center;justify-items:center">
+      <p class="eyebrow" style="color:var(--yellow)">For shops &amp; cafés</p>
+      <h2>Want Paddii at your café or shop?</h2>
+      <p class="th" style="color:var(--yellow)">สนใจนำแพดดี้ไปขายที่ร้าน</p>
+      <p style="max-width:620px;margin:8px 0 0">We’d love to work with you. Add us on LINE and our team will send you prices, terms and everything you need to get started.</p>
+      <p style="margin:24px 0 0"><a class="btn btn-line" href="https://lin.ee/7nR1ssz">Add us on LINE for more info</a></p>
     </div>
   </div>
 </section>
@@ -259,7 +244,7 @@ footer img{height:64px;width:auto}
       <h3>Contact us</h3>
       <p>Tel. 087-002-7117</p>
       <p><a href="mailto:rossukon.fmr@gmail.com">rossukon.fmr@gmail.com</a></p>
-      <p>LINE: @882ozmlp</p>
+      <p>LINE: [@paddii]</p>
       <p>Facebook: [Paddii]</p>
     </div>
     <div>
